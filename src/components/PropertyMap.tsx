@@ -74,6 +74,7 @@ export default function PropertyMap({
 }) {
   const [filters, setFilters] = useState({
     ...defaultFilters,
+    purpose: properties.find((p) => p.id === initialId)?.purpose || defaultFilters.purpose,
     city: initialCity,
   });
   const [selected, setSelected] = useState(initialId);
