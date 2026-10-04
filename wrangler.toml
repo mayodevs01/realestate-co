@@ -1,0 +1,9 @@
+name = "realestate-co"
+pages_build_output_dir = "dist"
+compatibility_date = "2026-10-04"
+
+[[d1_databases]]
+binding = "ENQUIRIES"
+database_name = "realestate-enquiries"
+database_id = "71659812-f46c-48de-b8ff-b7db2415873c"
+migrations_dir = "migrations"
