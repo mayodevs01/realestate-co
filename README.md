@@ -93,7 +93,7 @@ Daily IP hashes are cleared after one day during submissions. For a high-volume 
 
 All inventory is illustrative and marked accordingly; no availability or RERA registration is claimed. Project and customer stories are fictional, except the explicitly illustrative ATS Pristine example. Representative stock images are not photographs of listed properties. Rental estimates and gross yields are not guaranteed. Replace this data with authorised inventory and verified compliance details before operating as a real brokerage.
 
-The blue-glass tower is a custom AI-generated architectural asset. Stock imagery is from Unsplash: photo IDs and download/optimization process are recorded in `scripts/assets.mjs`. Existing assets are checked in and are sufficient to build; regeneration is optional and requires the original tower source outside this repository. Fonts are DM Sans and Manrope from Google Fonts, with open font licenses in `public/fonts`.
+The blue-glass tower is a custom AI-generated architectural asset. Stock imagery is from Unsplash: photo IDs and download/optimization process are recorded in `scripts/assets.mjs`. Existing assets are checked in and are sufficient to build; regeneration is optional. Pass a source PNG path to `node scripts/assets.mjs /path/to/tower.png` to replace the tower; omit the argument to regenerate only stock photos. `node scripts/fonts.mjs` refreshes the local variable fonts. Fonts are DM Sans and Manrope from Google Fonts, with open font licenses in `public/fonts`.
 
 ## Structure
 

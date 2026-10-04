@@ -29,4 +29,3 @@ for (const [name, id] of Object.entries(assets)) {
     .toFile(`public/images/${name}.webp`);
   console.log(name);
 }
-

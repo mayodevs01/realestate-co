@@ -6,4 +6,3 @@ let output='';for(let i=0;i<blocks.length;i++){const url=blocks[i].match(/url\((
 await writeFile(new URL('fonts.css',dir),output);
 for(const name of await readdir(dir))if(/^font-\d+\.ttf$/.test(name))await unlink(new URL(name,dir));
 for(const [font,sub] of [['DM-Sans','dmsans'],['Manrope','manrope']]){const r=await fetch(`https://raw.githubusercontent.com/google/fonts/main/ofl/${sub}/OFL.txt`);if(!r.ok)throw new Error('License download failed');await writeFile(new URL(`${font}-OFL.txt`,dir),await r.text());}console.log('Two local variable WOFF2 fonts and licenses saved.');
-
